@@ -11,5 +11,5 @@ fn main() {
     let is_evening = !is_morning;
     if is_evening {
         println!("Good evening!");
-    } 
+    }
 }
