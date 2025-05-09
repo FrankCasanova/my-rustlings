@@ -5,6 +5,7 @@ struct Queue {
     second_half: Vec<u32>,
 }
 
+
 impl Queue {
     fn new() -> Self {
         Self {
@@ -13,6 +14,7 @@ impl Queue {
         }
     }
 }
+
 
 fn send_tx(q: Queue, tx: mpsc::Sender<u32>) {
     // TODO: We want to send `tx` to both threads. But currently, it is moved
